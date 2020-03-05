@@ -9,7 +9,7 @@ import ArticleRight from '../article/articleright';
 const Jumb =() =>{
 return(
   <div>
-    <Tween from={{opacity:0,scale:0}} duration={0.5}>
+    <Tween from={{opacity:0,scale:0}} duration={0.9}>
   <div className="jumbotron jumbotron-fluid bg-dark text-white">
   <div className="container">
     <h1 className="display-4">Home</h1>
