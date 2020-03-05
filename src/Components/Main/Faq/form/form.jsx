@@ -1,22 +1,41 @@
 import React from 'react';
-
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 const Form =() => {
     return(
-        <form className='my-4'>
-            <div className='form-group'>
-                <label for="Name">Name</label>
-                <input type="text" className="form-control"/>
-            </div>
-            <div className='form-group'>
-                <label for="Surname">Surname</label>
-                <input type="text" className='form-control'/>
-            </div>
-            <div className='form-group'>
-                <label for="message">Message</label>
-                <textarea name="message" className='form-control'></textarea>
-            </div>
-            <button type='submit' className='btn btn-primary'>Submit</button>
-        </form>
+        <form  noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
+            <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            
+          >
+            Sign In
+          </Button>
+          </form>
     )
 }
 
